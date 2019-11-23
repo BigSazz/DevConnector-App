@@ -1,7 +1,11 @@
 const express = require('express');
 const colors = require('colors');
+const connectDB = require('./config/db');
 
 const app = express();
+
+// Connect to DB
+connectDB();
 
 // Body Parser
 app.use(express.json());
