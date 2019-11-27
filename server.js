@@ -14,7 +14,7 @@ app.use(express.json());
 app.use('/api/v2/users', require('./routes/api/users'));
 app.use('/api/v2/auth', require('./routes/api/auth'));
 app.use('/api/v2/profile', require('./routes/api/profile'));
-// app.use('/api/v2/posts', require('./routes/api/posts'));
+app.use('/api/v2/posts', require('./routes/api/posts'));
 
 const PORT = process.env.PORT || 5000;
 
